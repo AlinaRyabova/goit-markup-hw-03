@@ -136,7 +136,6 @@ button {
 }
 .main-text {
   font-size: 56px;
-  font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.07em;
   color: var(--accent-secondary-color);
@@ -190,7 +189,6 @@ button {
 /*--------------------BOX--------------------*/
 .box-title {
   font-size: 36px;
-  font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.045em;
   text-transform: capitalize;
@@ -209,7 +207,6 @@ button {
 }
 .team-headline {
   font-size: 36px;
-  font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.045em;
   text-transform: capitalize;
