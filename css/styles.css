@@ -5,6 +5,7 @@
   --primary-link-color: #404bbf;
   --secondary-link-color: #f4f4fd;
   --accent-secondary-color: #ffffff;
+  --border-color: #e7e9fc;
 }
 
 body {
@@ -82,19 +83,23 @@ button {
   color: var(--primary-color);
 }
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0 24px;
+  border-bottom: 1px solid var(--border-color);
 }
 .header-container {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 .header-nav {
   display: flex;
+  align-items: center;
 }
 .header-list {
   display: flex;
-  column-gap: 40px;
+}
+.header-link:not(:last-child) {
+  margin-right: 40px;
 }
 .header-link-item {
   font-size: 16px;
@@ -153,6 +158,8 @@ button {
   border-radius: 4px;
   display: block;
   margin: 0px auto;
+  min-width: 169px;
+  border: none;
 }
 .main-btn:hover,
 .main-btn:focus {
@@ -167,11 +174,22 @@ button {
   color: var(--accent-secondary-color);
 }
 /*--------------------FEATURE--------------------*/
+.feature {
+  padding: 120px 0 120px;
+}
+
 .feature-list {
   display: flex;
   align-items: center;
   column-gap: 24px;
 }
+.feature-list-items:not(:last-child) {
+  margin-right: 24px;
+}
+.feature-list-items {
+  width: calc((100% - 72px) / 4);
+}
+
 .feature-title {
   font-size: 20px;
   font-weight: 500;
@@ -187,6 +205,9 @@ button {
   color: var(--secondary-color);
 }
 /*--------------------BOX--------------------*/
+.box {
+  padding-bottom: 120px;
+}
 .box-title {
   font-size: 36px;
   line-height: 1.11;
@@ -199,11 +220,14 @@ button {
 .box-list {
   display: flex;
   justify-content: center;
-  column-gap: 24px;
+}
+.box-list-item:not(:last-child) {
+  margin-right: 24px;
 }
 /*--------------------TEAM--------------------*/
 .team {
   background-color: var(--secondary-link-color);
+  padding: 120px 0 120px;
 }
 .team-headline {
   font-size: 36px;
@@ -216,6 +240,10 @@ button {
 }
 .team-list-img {
   background-color: var(--accent-secondary-color);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-img:not(:last-child) {
+  margin-right: 24px;
 }
 .team-list {
   display: flex;
@@ -230,14 +258,17 @@ button {
   letter-spacing: 0.025em;
   color: var(--primary-color);
   margin-bottom: 8px;
-  margin-top: 32px;
+  text-align: center;
 }
 .team-work {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
-  padding-bottom: 32px;
+  text-align: center;
+}
+.content {
+  padding: 32px 0;
 }
 
 /*--------------------FOOTER--------------------*/
@@ -254,6 +285,8 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
@@ -269,16 +302,30 @@ button {
 }
 
 /*--------------------PORTFOLIO--------------------*/
+.portfolio {
+  padding: 96px 0 120px 0;
+}
+
 .portfolio-btn {
   background-color: var(--secondary-link-color);
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  border: 1px solid transparent;
 }
 .portfolio-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 24px;
+
   margin-bottom: 72px;
+}
+.portfolio-link:not(:last-child) {
+  margin-right: 24px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -302,7 +349,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.025em;
   color: var(--primary-color);
-  margin-top: 32px;
+
   margin-bottom: 8px;
 }
 .portfolio-pre-title {
@@ -310,10 +357,14 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
-  margin-bottom: 32px;
 }
 .portfolio-project {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+}
+.portfolio-content {
+  padding: 32px 16px;
+  border: 1px solid var(--border-color);
+  border-top: none;
 }
