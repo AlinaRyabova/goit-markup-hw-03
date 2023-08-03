@@ -84,7 +84,6 @@ button {
 }
 .header {
   border-bottom: 1px solid var(--border-color);
-  padding: 24px 0 24px;
 }
 .header-container {
   display: flex;
@@ -94,11 +93,12 @@ button {
 .header-nav {
   display: flex;
   align-items: center;
-  padding: 24px 0 24px;
 }
 .header-list {
   display: flex;
+  padding: 24px 0 24px;
 }
+
 .header-link:not(:last-child) {
   margin-right: 40px;
 }
@@ -186,12 +186,13 @@ button {
   display: flex;
   align-items: center;
   column-gap: 24px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .feature-list-items:not(:last-child) {
   margin-right: 24px;
 }
 .feature-list-items {
-  width: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .feature-title {
@@ -245,7 +246,7 @@ button {
 .team-list-img {
   background-color: var(--accent-secondary-color);
   border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .team-list-img:not(:last-child) {
   margin-right: 24px;
@@ -255,6 +256,7 @@ button {
   justify-content: center;
   column-gap: 24px;
   text-align: center;
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .team-name {
   font-size: 20px;
@@ -332,6 +334,7 @@ button {
 .portfolio-project-list {
   width: calc((100% - 48px) / 3);
 }
+
 .portfolio-link:not(:last-child) {
   margin-right: 24px;
 }
@@ -357,7 +360,6 @@ button {
   line-height: 1.2;
   letter-spacing: 0.025em;
   color: var(--primary-color);
-
   margin-bottom: 8px;
 }
 .portfolio-pre-title {
