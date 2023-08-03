@@ -132,7 +132,7 @@ button {
 /*--------------------MAIN--------------------*/
 .main-cap {
   background-color: var(--primary-color);
-  max-width: 1440px;
+
   padding-top: 188px;
   padding-bottom: 188px;
 }
