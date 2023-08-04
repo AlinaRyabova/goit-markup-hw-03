@@ -372,9 +372,7 @@ button {
   flex-wrap: wrap;
   gap: 48px 24px;
 }
-.portfolio-project-link {
-  width: calc((100% - 48px) / 3);
-}
+
 .portfolio-content {
   padding: 32px 16px;
   border: 1px solid var(--border-color);
