@@ -96,7 +96,8 @@ button {
 }
 .header-list {
   display: flex;
-  padding: 24px 0 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-link:not(:last-child) {
