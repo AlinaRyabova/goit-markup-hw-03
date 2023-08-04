@@ -98,9 +98,7 @@ button {
   display: flex;
   padding: 24px 0 24px;
 }
-.header-link {
-  padding: 24px 0 24px;
-}
+
 .header-link:not(:last-child) {
   margin-right: 40px;
 }
@@ -136,7 +134,7 @@ button {
 }
 .contacts {
   font-style: normal;
-  padding: 24px 0 24px;
+  /* padding: 24px 0 24px; */
 }
 /*--------------------MAIN--------------------*/
 .main-cap {
