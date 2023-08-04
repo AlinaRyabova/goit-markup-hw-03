@@ -96,6 +96,8 @@ button {
 }
 .header-list {
   display: flex;
+}
+.header-link {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -135,7 +137,6 @@ button {
 }
 .contacts {
   font-style: normal;
-  /* padding: 24px 0 24px; */
 }
 /*--------------------MAIN--------------------*/
 .main-cap {
