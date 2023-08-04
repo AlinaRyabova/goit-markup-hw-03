@@ -97,11 +97,10 @@ button {
 .header-list {
   display: flex;
 }
-.header-link {
+.header-link-item {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
 .header-link:not(:last-child) {
   margin-right: 40px;
 }
