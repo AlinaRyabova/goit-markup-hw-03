@@ -369,7 +369,7 @@ button {
   flex-wrap: wrap;
   gap: 48px 24px;
 }
-.portfolio-project-item {
+.portfolio-project-link {
   width: calc((100% - 48px) / 3);
 }
 .portfolio-content {
