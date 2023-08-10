@@ -305,7 +305,6 @@ button {
   letter-spacing: 0.02em;
   color: var(--secondary-link-color);
   max-width: 264px;
-  margin-top: 16px;
 }
 .footer-accent {
   color: var(--secondary-link-color);
